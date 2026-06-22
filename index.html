@@ -1,15 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>LANDING PASE USER QR</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -17,6 +6,8 @@
   <title>Pase de Acceso Oficial</title>
   <!-- Enlace al archivo de estilos externos -->
   <link rel="stylesheet" href="style.css">
+  <!-- Librería local para generar QRs de forma instantánea -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
 
@@ -25,13 +16,15 @@
     <!-- VISTA 1: DETALLES DEL INVITADO Y QR (Por defecto) -->
     <div id="normal-view">
       <div class="header">
-        <h1>PASE DE ACCESO</h1>
+        <!-- TÍTULO CORPORATIVO ACTUALIZADO -->
+        <h1>PASE DE ACCESO CASA MUNDIALISTA INGRAM-DELL</h1>
         <p>Invitación Personalizada</p>
       </div>
       <div class="content">
         <h2 class="welcome" id="user-name">Validando invitación...</h2>
         <div class="qr-container">
-          <img class="qr-image" id="qr-img" src="" alt="Cargando código QR...">
+          <!-- Contenedor donde se dibuja el QR nativo e inmediato -->
+          <div id="qrcode"></div>
         </div>
         <br>
         <div class="badge-id" id="user-id">------</div>
@@ -52,9 +45,4 @@
   <!-- Enlace al archivo de lógica JavaScript -->
   <script src="script.js"></script>
 </body>
-</html>
-    <script  src="./script.js"></script>
-
-  </body>
-  
 </html>
