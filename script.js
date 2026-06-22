@@ -18,16 +18,15 @@ const invitados = [
   {"id":"DELL-IM-260009","tel":"3058147834","nombre":"Santiago Mariño","canal":"Alfacomputers"},
   {"id":"DELL-IM-260010","tel":"3167041399","nombre":"MARIA FERNANDA PLATA RAMOS","canal":"ASC SISTEMAS Y CIA SAS"},
   {"id":"DELL-IM-260011","tel":"3167041399","nombre":"ALEJANDRO ESTRADA","canal":"ASC SISTEMAS Y CIA SAS"},
-  {"id":"DELL-IM-260112","tel":"3167041399","nombre":"NELSON ESTRADA","canal":"ASC SISTEMAS Y CIA SAS"},
-  {"id":"DELL-IM-260012","tel":"3019191054","nombre":"Laura sahian anacona camelo","canal":"controles empresariales"},
-  {"id":"DELL-IM-260013","tel":"3013806779","nombre":"María Fernanda Garavito Merchan","canal":"Compurent"},
-  {"id":"DELL-IM-260014","tel":"3176571903","nombre":"GLORIA CASTAÑEDA","canal":"COMPUTEL SYSTEM"},
-  {"id":"DELL-IM-260015","tel":"3045311855","nombre":"José Esteban López Jaime","canal":"Ingram micro"},
-  {"id":"DELL-IM-260016","tel":"3222621688","nombre":"Juan Carlos Castro Molano","canal":"Comware"},
-  {"id":"DELL-IM-260017","tel":"3114646004","nombre":"Carlos Andres Quintero Ramirez","canal":"Ingram micro"},
-  {"id":"DELL-IM-260018","tel":"3227422877","nombre":"Andres Felipe Agudelo Guayara","canal":"Controles Empresariales"},
-  {"id":"DELL-IM-260019","tel":"3178542513","nombre":"Yuli Guzmán","canal":"Controles empresariales"},
-  {"id":"DELL-IM-260020","tel":"3044133910","nombre":"David Alejandro Vanegas amaya","canal":"Controles Empresariales"},
+  {"id":"DELL-IM-260012","tel":"3167041399","nombre":"NELSON ESTRADA","canal":"ASC SISTEMAS Y CIA SAS"},
+  {"id":"DELL-IM-260013","tel":"3019191054","nombre":"Laura sahian anacona camelo","canal":"controles empresariales"},
+  {"id":"DELL-IM-260014","tel":"3013806779","nombre":"María Fernanda Garavito Merchan","canal":"Compurent"},
+  {"id":"DELL-IM-260015","tel":"3176571903","nombre":"GLORIA CASTAÑEDA","canal":"COMPUTEL SYSTEM"},
+  {"id":"DELL-IM-260016","tel":"3045311855","nombre":"José Esteban López Jaime","canal":"Ingram micro"},
+  {"id":"DELL-IM-260017","tel":"3222621688","nombre":"Juan Carlos Castro Molano","canal":"Comware"},
+  {"id":"DELL-IM-260018","tel":"3114646004","nombre":"Carlos Andres Quintero Ramirez","canal":"Ingram micro"},
+  {"id":"DELL-IM-260019","tel":"3227422877","nombre":"Andres Felipe Agudelo Guayara","canal":"Controles Empresariales"},
+  {"id":"DELL-IM-260020","tel":"3178542513","nombre":"Yuli Guzmán","canal":"Controles empresariales"},
   {"id":"DELL-IM-260021","tel":"3054104063","nombre":"Ashleys Carolina De la hoz Ponton","canal":"Controles empresariales"},
   {"id":"DELL-IM-260022","tel":"3144293857","nombre":"Ingrid Yomara Roa Hurtado","canal":"Controles Empresariales"},
   {"id":"DELL-IM-260023","tel":"3007069349","nombre":"lorena obando","canal":"controles empresariales"},
@@ -157,12 +156,11 @@ const urlParams = new URLSearchParams(window.location.search);
 const idUrl = urlParams.get('id');
 
 if (idUrl) {
-  // BÚSQUEDA ESTRICTA POR TEXTO: Vincula el objeto real basándose estrictamente en el string del ID
+  // BÚSQUEDA ESTRICTA POR ID
   const usuarioEncontrado = invitados.find(u => u.id && u.id.trim().toUpperCase() === idUrl.trim().toUpperCase());
 
   if (usuarioEncontrado) {
-    // Cargar los datos dinámicamente usando de forma exclusiva las propiedades del objeto encontrado
-    document.getElementById('user-name').innerText = usuarioEncontrado.nombre;
+    // SE REMOVIÓ LA CARGA DEL NOMBRE COMPLETO. SÓLO SE MUESTRA EL ID EN LA TARJETA.
     document.getElementById('user-id').innerText = usuarioEncontrado.id;
 
     // Crear la URL exacta codificada para el QR
@@ -191,9 +189,10 @@ if (idUrl) {
     }, 1500);
 
   } else {
-    document.getElementById('user-name').innerText = "Invitación No Válida";
-    document.getElementById('user-name').style.color = "#e74c3c";
+    // Manejo de errores simplificado sin exponer nombres
+    document.getElementById('user-id').innerText = "ID de Invitación No Válido";
+    document.getElementById('user-id').style.color = "#e74c3c";
   }
 } else {
-  document.getElementById('user-name').innerText = "Enlace de acceso incompleto";
+  document.getElementById('user-id').innerText = "Enlace de acceso incompleto";
 }
