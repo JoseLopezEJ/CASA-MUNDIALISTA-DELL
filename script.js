@@ -4,7 +4,7 @@
 const GITHUB_PAGES_URL = "https://joselopezej.github.io/CASA-MUNDIALISTA-DELL/scanner.html";
 
 // =========================================================================
-// BASE DE DATOS LOCAL EMBEDIDA (Para evitar errores de fetch)
+// BASE DE DATOS LOCAL EMBEDIDA (Totalmente actualizada y alineada)
 // =========================================================================
 const invitados = [
   {"id":"DELL-IM-260001","tel":"3204219740","nombre":"Andres Londoño","canal":"Ingram Micro"},
@@ -157,21 +157,21 @@ const urlParams = new URLSearchParams(window.location.search);
 const idUrl = urlParams.get('id');
 
 if (idUrl) {
-  // Buscar coincidencia exacta por ID en la lista interna integrada
-  const usuarioEncontrado = invitados.find(u => u.id && u.id.trim() === idUrl.trim());
+  // CORRECCIÓN CLAVE: Buscar coincidencia estricta basada única y estrictamente en la propiedad .id
+  const usuarioEncontrado = invitados.find(u => u.id && u.id.trim().toUpperCase() === idUrl.trim().toUpperCase());
 
   if (usuarioEncontrado) {
-    // Cargar los datos dinámicamente en el HTML al instante
+    // Cargar los datos dinámicamente en el HTML vinculando directamente la propiedad del objeto encontrado
     document.getElementById('user-name').innerText = usuarioEncontrado.nombre;
-    document.getElementById('user-id').innerText = idUrl;
+    document.getElementById('user-id').innerText = usuarioEncontrado.id; // Se usa el id verificado
 
     // Crear el string que se codificará en el QR (URL para el lector en puerta)
-    const infoScan = `${GITHUB_PAGES_URL}?id=${encodeURIComponent(idUrl)}`;
+    const infoScan = `${GITHUB_PAGES_URL}?id=${encodeURIComponent(usuarioEncontrado.id)}`;
     
     // Limpiar el contenedor
     document.getElementById("qrcode").innerHTML = "";
     
-    // Generar el código QR nativo en milisegundos sin llamadas externas
+    // Generar el código QR nativo
     new QRCode(document.getElementById("qrcode"), {
       text: infoScan,
       width: 240,
@@ -183,7 +183,7 @@ if (idUrl) {
     
     // ESCUCHA ACTIVA: Verifica cada 1.5 segundos si este ID ya ingresó
     setInterval(() => {
-      if (localStorage.getItem(`ingresado_${idUrl}`) === 'true') {
+      if (localStorage.getItem(`ingresado_${usuarioEncontrado.id}`) === 'true') {
         document.getElementById('normal-view').style.display = 'none';
         document.getElementById('confirmed-view').style.display = 'block';
         document.getElementById('main-card').style.borderTop = '6px solid #2ecc71';
