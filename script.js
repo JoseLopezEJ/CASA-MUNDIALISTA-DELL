@@ -10,7 +10,7 @@ const idUrl = urlParams.get('id');
 if (idUrl) {
   
   // Buscar información del invitado leyendo tu archivo local base.json
-  fetch('base.json')
+  fetch('base.json') // Asegúrate de que el archivo en GitHub se llame exactamente así
     .then(res => res.json())
     .then(invitados => {
       
@@ -22,9 +22,21 @@ if (idUrl) {
         document.getElementById('user-name').innerText = usuarioEncontrado.nombre;
         document.getElementById('user-id').innerText = idUrl;
 
-        // Generar el código QR apuntando directamente al Scanner de tu Staff con el ID del invitado
+        // Generar el código QR de forma INSTANTÁNEA en el celular
         const infoScan = `${GITHUB_PAGES_URL}?id=${encodeURIComponent(idUrl)}`;
-        document.getElementById('qr-img').src = `https://chart.googleapis.com/chart?cht=qr&chs=350x350&chl=${encodeURIComponent(infoScan)}`;
+        
+        // Limpiar el contenedor por si acaso
+        document.getElementById("qrcode").innerHTML = "";
+        
+        // Crear el QR nativo
+        new QRCode(document.getElementById("qrcode"), {
+          text: infoScan,
+          width: 240,
+          height: 240,
+          colorDark : "#000000",
+          colorLight : "#ffffff",
+          correctLevel : QRCode.CorrectLevel.H
+        });
         
         // ESCUCHA ACTIVA LOCAL: Verifica cada 1.5 segundos si este ID ya fue escaneado en puerta
         setInterval(() => {
