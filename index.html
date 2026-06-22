@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>LANDING PASE USER QR</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pase de Acceso Oficial</title>
+  <!-- Enlace al archivo de estilos externos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card" id="main-card">
+    
+    <!-- VISTA 1: DETALLES DEL INVITADO Y QR (Por defecto) -->
+    <div id="normal-view">
+      <div class="header">
+        <h1>PASE DE ACCESO</h1>
+        <p>Invitación Personalizada</p>
+      </div>
+      <div class="content">
+        <h2 class="welcome" id="user-name">Validando invitación...</h2>
+        <div class="qr-container">
+          <img class="qr-image" id="qr-img" src="" alt="Cargando código QR...">
+        </div>
+        <br>
+        <div class="badge-id" id="user-id">------</div>
+        <p class="instructions">Presenta este código QR en la entrada para registrar tu ingreso al evento.</p>
+      </div>
+    </div>
+    
+    <!-- VISTA 2: PANTALLA DE ÉXITO EN TIEMPO REAL (Oculta al inicio) -->
+    <div id="confirmed-view" class="confirmed-state">
+      <div class="icon-success">✓</div>
+      <h2 class="confirmed-title">ID CONFIRMADO</h2>
+      <p class="confirmed-p">¡Tu ingreso ha sido autorizado!</p>
+      <p style="color:#86868b; font-size:0.9rem; margin-top:25px;">Bienvenido(a) al evento.</p>
+    </div>
+
+  </div>
+
+  <!-- Enlace al archivo de lógica JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
