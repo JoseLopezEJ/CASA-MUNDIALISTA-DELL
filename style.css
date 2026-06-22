@@ -36,15 +36,17 @@ body {
 }
 
 .header h1 { 
-  font-size: 1.5rem; 
-  font-weight: 600; 
+  font-size: 1.2rem; /* Ajustado para que el título largo encaje en 2 líneas */
+  font-weight: 700; 
   letter-spacing: 0.5px;
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .header p {
   font-size: 0.85rem;
   opacity: 0.85;
-  margin-top: 4px;
+  margin-top: 6px;
   text-transform: uppercase;
 }
 
@@ -70,10 +72,12 @@ body {
   margin-bottom: 20px; 
 }
 
-.qr-image { 
-  width: 240px; 
-  height: 240px; 
-  display: block; 
+/* Ajuste para que el QR interno de la librería se centre bien */
+#qrcode img, #qrcode canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: 240px;
+  max-height: 240px;
 }
 
 /* Identificador del ID en fondo oscuro */
