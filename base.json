@@ -1,4 +1,3 @@
-JSON
 [
   {
     "id": "DELL-IM-260001",
@@ -46,13 +45,13 @@ JSON
     "id": "DELL-IM-260008",
     "tel": "3174026242",
     "nombre": "Leonardo Mariño",
-    "canal": "Alfacomputers"
+    "canal": "Alfacomputers "
   },
   {
     "id": "DELL-IM-260009",
     "tel": "3058147834",
     "nombre": "Santiago Mariño",
-    "canal": "Alfacomputers"
+    "canal": "Alfacomputers "
   },
   {
     "id": "DELL-IM-260010",
@@ -118,61 +117,61 @@ JSON
     "id": "DELL-IM-260020",
     "tel": "3178542513",
     "nombre": "Yuli Guzmán",
-    "canal": "Controles empresariales"
+    "canal": "Controles empresariales "
   },
   {
     "id": "DELL-IM-260021",
     "tel": "3044133910",
     "nombre": "David Alejandro Vanegas amaya",
-    "canal": "Controles Empresariales"
+    "canal": "Controles Empresariales "
   },
   {
     "id": "DELL-IM-260022",
     "tel": "3054104063",
     "nombre": "Ashleys Carolina De la hoz Ponton",
-    "canal": "Controles empresariales"
+    "canal": "Controles empresariales "
   },
   {
     "id": "DELL-IM-260023",
     "tel": "3144293857",
     "nombre": "Ingrid Yomara Roa Hurtado",
-    "canal": "Controles Empresariales"
+    "canal": "Controles Empresariales "
   },
   {
     "id": "DELL-IM-260024",
     "tel": "3007069349",
     "nombre": "lorena obando",
-    "canal": "controles empresariales"
+    "canal": "controles empresariales "
   },
   {
     "id": "DELL-IM-260025",
     "tel": "3194977678",
     "nombre": "Andrea Borda",
-    "canal": "CONTROLES EMPRESARIALES"
+    "canal": "CONTROLES EMPRESARIALES "
   },
   {
     "id": "DELL-IM-260026",
     "tel": "3182451685",
     "nombre": "ALISON LOPEZ",
-    "canal": "CONTROLES EMPRESARIALES"
+    "canal": "CONTROLES EMPRESARIALES "
   },
   {
     "id": "DELL-IM-260027",
     "tel": "3102673942",
     "nombre": "Juan Pablo Amador",
-    "canal": "Dell"
+    "canal": "Dell "
   },
   {
     "id": "DELL-IM-260028",
     "tel": "3134130564",
     "nombre": "Leidy Nataly Alba Lombana",
-    "canal": "Controles empresariales"
+    "canal": "Controles empresariales "
   },
   {
     "id": "DELL-IM-260029",
     "tel": "3008591995",
     "nombre": "Diego Quevedo",
-    "canal": "Controles Empresariales"
+    "canal": "Controles Empresariales "
   },
   {
     "id": "DELL-IM-260030",
@@ -184,25 +183,25 @@ JSON
     "id": "DELL-IM-260031",
     "tel": "3133093046",
     "nombre": "Stiven villamil",
-    "canal": "Dasa High Technology"
+    "canal": "Dasa High Technology "
   },
   {
     "id": "DELL-IM-260032",
     "tel": "3212158717",
     "nombre": "sandra penagos",
-    "canal": "Dasa High Technology"
+    "canal": "Dasa High Technology "
   },
   {
     "id": "DELL-IM-260033",
     "tel": "3102597339",
     "nombre": "NICOLAS ROMERO QUIJANO",
-    "canal": "Dasa High Technology"
+    "canal": "Dasa High Technology "
   },
   {
     "id": "DELL-IM-260034",
     "tel": "3174307035",
     "nombre": "Daniel santiago acevedo",
-    "canal": "Dasa High Technology"
+    "canal": "Dasa High Technology "
   },
   {
     "id": "DELL-IM-260035",
@@ -214,19 +213,19 @@ JSON
     "id": "DELL-IM-260036",
     "tel": "3122816648",
     "nombre": "Jonathan Stiven Bonilla Avila",
-    "canal": "Dasa High Technology"
+    "canal": "Dasa High Technology "
   },
   {
     "id": "DELL-IM-260037",
     "tel": "3204203204",
     "nombre": "BLANCA CECILIA CAÑON DIAZ",
-    "canal": "Dasa High Technology"
+    "canal": "Dasa High Technology "
   },
   {
     "id": "DELL-IM-260038",
     "tel": "3174307035",
     "nombre": "alexander acevedo",
-    "canal": "Dasa High Technology"
+    "canal": "Dasa High Technology "
   },
   {
     "id": "DELL-IM-260039",
@@ -245,6 +244,12 @@ JSON
     "tel": "3208396195",
     "nombre": "Andres Martinez",
     "canal": "disc-itbs latam sas"
+  },
+  {
+    "id": "DELL-IM-260042",
+    "tel": "3168330182",
+    "nombre": "martha del rio, diana zea, felipe mejia",
+    "canal": "DELL"
   },
   {
     "id": "DELL-IM-260043",
@@ -304,19 +309,19 @@ JSON
     "id": "DELL-IM-260052",
     "tel": "3144534996",
     "nombre": "Luis Marín",
-    "canal": "Intelligence it"
+    "canal": "Intelligence it "
   },
   {
     "id": "DELL-IM-260053",
     "tel": "3011811417",
     "nombre": "Camilo Andrés Jiménez Pérez",
-    "canal": "Kennertch"
+    "canal": "Kennertch "
   },
   {
     "id": "DELL-IM-260054",
     "tel": "3102528090",
     "nombre": "Bibiana torres",
-    "canal": "Kennertch"
+    "canal": "Kennertch "
   },
   {
     "id": "DELL-IM-260055",
@@ -418,7 +423,7 @@ JSON
     "id": "DELL-IM-260071",
     "tel": "3001638743",
     "nombre": "Duvan Fernando Galindo",
-    "canal": "Microhome"
+    "canal": "Microhome "
   },
   {
     "id": "DELL-IM-260072",
@@ -499,6 +504,12 @@ JSON
     "canal": "Ingram Micro"
   },
   {
+    "id": "DELL-IM-260085",
+    "tel": "3122181328",
+    "nombre": "Alejandra Velásquez",
+    "canal": "Provexpress "
+  },
+  {
     "id": "DELL-IM-260086",
     "tel": "3112955869",
     "nombre": "Mayerly velasco",
@@ -508,19 +519,19 @@ JSON
     "id": "DELL-IM-260087",
     "tel": "3193070656",
     "nombre": "Dafne ruiz",
-    "canal": "Provexpress"
+    "canal": "Provexpress "
   },
   {
     "id": "DELL-IM-260088",
     "tel": "3105571772",
     "nombre": "Paola Garcia Q",
-    "canal": "Provexpress"
+    "canal": "Provexpress "
   },
   {
     "id": "DELL-IM-260089",
     "tel": "3157763919",
     "nombre": "Andres Peña S",
-    "canal": "Provexpress"
+    "canal": "Provexpress "
   },
   {
     "id": "DELL-IM-260090",
@@ -670,7 +681,7 @@ JSON
     "id": "DELL-IM-260114",
     "tel": "3125882641",
     "nombre": "Angie Lorena cruz",
-    "canal": "RIT enterprise"
+    "canal": "RIT enterprise "
   },
   {
     "id": "DELL-IM-260115",
@@ -718,7 +729,7 @@ JSON
     "id": "DELL-IM-260122",
     "tel": "3105299715",
     "nombre": "Haydee Perez",
-    "canal": "STP CONSULTORES"
+    "canal": "STP CONSULTORES "
   },
   {
     "id": "DELL-IM-260123",
@@ -772,10 +783,16 @@ JSON
     "id": "DELL-IM-260131",
     "tel": "3123666772",
     "nombre": "Gabriela Aponte cadena",
-    "canal": "Tek soluciones"
+    "canal": "Tek soluciones "
   },
   {
     "id": "DELL-IM-260132",
+    "tel": "3124979863",
+    "nombre": "JEIMMY ROCHA",
+    "canal": "THEIAX"
+  },
+  {
+    "id": "DELL-IM-260133",
     "tel": "3124979863",
     "nombre": "JEIMMY ROCHA",
     "canal": "THEIAX"
