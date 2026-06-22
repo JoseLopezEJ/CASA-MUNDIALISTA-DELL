@@ -3,46 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pase de Acceso Oficial</title>
-  <!-- Enlace al archivo de estilos externos -->
+  <title>Pase de Acceso Casa Mundialista</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Librería local para generar QRs de forma instantánea -->
+  <!-- Librería obligatoria para generar el código QR -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
 
-  <div class="card" id="main-card">
-    
-    <!-- VISTA 1: DETALLES DEL INVITADO Y QR (Por defecto) -->
-    <div id="normal-view">
-      <div class="header">
-        <!-- TÍTULO CORPORATIVO ACTUALIZADO -->
-        <h1>PASE DE ACCESO CASA MUNDIALISTA INGRAM-DELL</h1>
-        <p>Invitación Personalizada</p>
-      </div>
-      <div class="content">
-        <h2 class="welcome" id="user-name">Validando invitación...</h2>
-        <div class="qr-container">
-          <!-- Contenedor donde se dibuja el QR nativo e inmediato -->
-          <div id="qrcode"></div>
+  <div class="container">
+    <div class="card" id="main-card">
+      
+      <!-- VISTA NORMAL: Idéntica a image_abb3c6.png -->
+      <div id="normal-view">
+        <div class="card-header">
+          <h1 class="header-title">PASE DE ACCESO CASA MUNDIALISTA</h1>
+          <h2 class="header-subtitle">INGRAM-DELL</h2>
+          <p class="header-badge">INVITACIÓN PERSONALIZADA</p>
         </div>
-        <br>
-        <div class="badge-id" id="user-id">------</div>
-        <p class="instructions">Presenta este código QR en la entrada para registrar tu ingreso al evento.</p>
+        
+        <div class="card-body">
+          <!-- Espacio superior libre al quitar el nombre -->
+          <div class="qr-dotted-container">
+            <div id="qrcode"></div>
+          </div>
+          
+          <div class="id-button-container">
+            <div class="id-badge" id="user-id">Cargando...</div>
+          </div>
+          
+          <p class="footer-text">Presenta este código QR en la entrada para registrar tu ingreso al evento.</p>
+        </div>
       </div>
-    </div>
-    
-    <!-- VISTA 2: PANTALLA DE ÉXITO EN TIEMPO REAL (Oculta al inicio) -->
-    <div id="confirmed-view" class="confirmed-state">
-      <div class="icon-success">✓</div>
-      <h2 class="confirmed-title">ID CONFIRMADO</h2>
-      <p class="confirmed-p">¡Tu ingreso ha sido autorizado!</p>
-      <p style="color:#86868b; font-size:0.9rem; margin-top:25px;">Bienvenido(a) al evento.</p>
-    </div>
 
+      <!-- VISTA DE CONFIRMACIÓN -->
+      <div id="confirmed-view" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h2 class="success-title">¡INGRESO CONFIRMADO!</h2>
+        <p class="success-message">Tu pase de entrada ya ha sido registrado con éxito en la puerta.</p>
+      </div>
+
+    </div>
   </div>
 
-  <!-- Enlace al archivo de lógica JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
